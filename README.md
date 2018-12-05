@@ -16,7 +16,11 @@ https://www.boxofficemojo.com/alltime/adjusted.htm
 Delegation:
 
 Dustin: Mongo database setup and add-in movie functionality
+
 Bhavan: Movie revenue vs. movie genre data vizualizations
+
 Prabhdeep: Revenue ratio(total box office / total budget) and rating vs. total budget
+
 Eric: Filterable top box office blockbusters adjusted for inflation
+
 Cameron: Interactive map of critic / user ratings vs. production company base location
