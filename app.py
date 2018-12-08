@@ -8,14 +8,15 @@ def index():
    # """Return the homepage."""
     return render_template("index.html")
 
+@app.route("/moviemap")
 def moviemap():
     return render_template("moviemap.html")
 
+@app.route("/boxoffice")
 def boxoffice():
     return render_template("boxoffice.html")
 
 
-# Add any other routes here
 
 
 if __name__ == "__main__":
