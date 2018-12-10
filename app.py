@@ -23,19 +23,19 @@ def boxoffice():
 def genre():
     return render_template('genre.html')
 
-@app.route('/movies')
-def movies():
-    movies = dr.get_movies()
-    result = []
-    for i,movie in enumerate(movies):
-        if i == 0:
-            continue
-        result.append({
-            'gross': movie[0],
-            'year': movie[1],
-            'genre': movie[2]
-        })
-    return jsonify(result)
+#@app.route('/movies')
+#def movies():
+#    movies = dr.get_movies()
+#    result = []
+#    for i,movie in enumerate(movies):
+#        if i == 0:
+#            continue
+#        result.append({
+#            'gross': movie[0],
+#            'year': movie[1],
+#            'genre': movie[2]
+#        })
+#    return jsonify(result)
 
 @app.route('/budget')
 def budget():
