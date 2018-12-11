@@ -1,4 +1,3 @@
-import pandas as pd
 import data_retrieval as dr
 
 from flask import Flask, jsonify, render_template, request
