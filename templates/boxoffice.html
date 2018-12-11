@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/tablestyle.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading">Apply Filter</div>
               <div class="panel-body">
                 <div class="form-group">
                   <ul class="list-group" id="filters">
@@ -50,10 +50,6 @@
                       <label for="country">Look-Up a Movie</label>
                       <input class="form-control" id="title" type="text" placeholder="Star Wars">
                     </li>
-                    <li class="filter list-group-item">
-                      <label for="shape">XXX</label>
-                      <input class="form-control" id="shape" type="text" placeholder="XXX">
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -63,7 +59,7 @@
         <div class="col-md-10">
           <div id="table-area" class="">
             <h1 class="text-center loader" id="loader">DOMESTIC GROSSES Adjusted for Ticket Price Inflation</h1>
-            <table id="ufo-table" class="table table-striped">
+            <table id="table" class="table table-striped">
               <thead>
                 <tr>
                   <th class="table-head">Rank</th>
@@ -71,8 +67,7 @@
                   <th class="table-head">Studio</th>
                   <th class="table-head">Adjusted Gross</th>
                   <th class="table-head">Unadjusted Gross</th>
-                  <th class="table-head">Year</th>
-                  <th class="table-head">Comments</th>
+                  <th class="table-head">Year</th> 
                 </tr>
               </thead>
               <tbody></tbody>
@@ -82,7 +77,7 @@
       </div>
     </div>
     <footer class="footer">
-      <span class="bottom">GUACAMovie</span>
+      <span class="bottom"></span>
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
