@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Guacamovie</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>GuacaMovie</title>
-  <link rel="shortcut icon" type="image/png" href="../static/Avocado.jpg"/>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<style>
-    body {background:url(../Screen3.jpg) no-repeat;
-    background-size: 100%;}
-</style>
-</head>
-<body>
-    <h1 align="center" style="color:green; font-family:comic sans ms;" font>GuacaMovie<img src="../static/splat.png" style="width:50px;height:40px;"></h1>
-    <div><img src="../static/Reel.gif" align="center" style="width:1000px;height:575px"></div>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="../static/css/styleDRM.css" rel="stylesheet">
 
-    <li><a href="/boxoffice">BOXOFFICE</a></li>
-    <li><a href="/moviemap">MAP</a></li>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron">
+          <h1>Welcome to GuacaMovie!</h1>
+          <p>GuacaMovie is an interactive website that vizualizes correlations between various movie success measurements based on prior movie data. Follow along and click through the side to gain insights on the movie industry!</p>
+        </div>
+      </div>
+    </div>
 
+    <br>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="../static/images/boxofficepic.png" alt="BoxOffice">
+                <div class="caption">
+                  <h3>Adjusted Box Office Gross</h3>
+                  <p>This page allows you to view movies' adjusted gross and filter your selections based on year, studio, overall rank, or movie title.</p>
+                  <p><a href="/boxoffice" class="btn btn-primary" role="button">Check it out!</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="../static/images/mappic.png" alt="MovieMap">
+                <div class="caption">
+                  <h3>IMDB Scores By Country</h3>
+                  <p>This page allows you to explore the average IMDB score based on the origin country of the production company. Our data goes back to 1986 and includes data from 57 different countries!</p>
+                  <p><a href="/moviemap" class="btn btn-primary" role="button">Go to Map!</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-6">
+              <div class="thumbnail">
+                  <img src="../static/images/budgetpic.png" alt="Budget">
+                  <div class="caption">
+                    <h3>Budget vs. Runtime/Revenue</h3>
+                    <p>This page allows the user to compare movies' budgets against their runtime and overall revenue. Draw what correlations you may!</p>
+                    <p><a href="/budget" class="btn btn-primary" role="button">Go to Graph!</a></p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script src="main.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
