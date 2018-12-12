@@ -1,6 +1,6 @@
 var playPause = anime({
   targets: 'div.box',
-  translateY: [
+  translateX: [
     { value: 200, duration: 500 },
     { value: 0, duration: 800 }
   ],
